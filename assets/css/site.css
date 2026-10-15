@@ -248,3 +248,79 @@ address{font-style:normal}
 
 .video-capa{position:relative;display:block;width:100%;max-width:420px;border:0;padding:0;background:var(--areia);cursor:pointer}
 .video-capa img{aspect-ratio:9/16;object-fit:cover;width:100%}
+
+
+.cartoes-google{margin-bottom:var(--s-5);display:grid;grid-template-columns:minmax(0,1fr);gap:var(--s-5);margin-top:var(--s-7)}
+@media (min-width:900px){.cartoes-google{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.cartao-google{position:relative;background:#FFFFFF;border:1px solid #dadce0;border-radius:8px;padding:16px;max-width:36rem;margin:var(--s-5) 0;font-family:Roboto,Arial,sans-serif;color:#3c4043;font-size:14px;line-height:20px}
+.cartoes-google .cartao-google{margin:0;max-width:none}
+.cartao-google header{display:flex;align-items:center;gap:12px;margin-bottom:8px;padding-right:28px}
+.cartao-google .avatar{width:40px;height:40px;border-radius:50%;flex:none;object-fit:cover;background:#e8eaed}
+.cartao-google strong{font-weight:500;font-size:15px;color:#202124;line-height:20px}
+.cartao-google .g-logo{position:absolute;top:14px;right:14px;width:18px;height:18px}
+.estrelas{display:inline-flex;gap:0;vertical-align:middle}
+.estrelas .estrela{position:relative;display:inline-block;width:14px;height:14px;line-height:0}
+.estrelas svg{width:14px;height:14px;fill:#fbbc04}
+.estrelas .estrela.vazia>svg{fill:#dadce0}
+.estrelas .enche{position:absolute;left:0;top:0;height:14px;overflow:hidden}
+.estrelas .enche svg{max-width:none}
+.cartao-google .estrelas{display:flex;margin-bottom:8px}
+.cartao-google p.aval-texto{margin:0 0 12px;max-width:none;font-size:14px;line-height:20px;color:#3c4043;white-space:pre-wrap}
+.cartao-google a.ver-google{font-size:14px;color:#5f6368;text-decoration:none}
+.cartao-google a.ver-google:hover{text-decoration:underline}
+
+.cartao-ig{text-align:left;position:relative;display:flex;flex-direction:column;background:#FFFFFF;border:1px solid #dadce0;border-radius:8px;padding:16px;max-width:36rem;margin:var(--s-5) 0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#262626;font-size:14px;line-height:18px}
+.cartoes-google .cartao-ig{margin:0;max-width:none}
+.cartao-titulo .cartao-ig{margin-left:auto;margin-right:auto}
+.cartao-ig .ig-logo{position:absolute;top:14px;right:14px;width:20px;height:20px}
+.cartao-ig .ig-linha{display:flex;align-items:flex-start;gap:12px;margin-bottom:12px}
+.cartao-ig .ig-avatar{width:32px;height:32px;border-radius:50%;flex:none;object-fit:cover;background:#efefef;border:1px solid rgba(0,0,0,.08);box-sizing:border-box}
+.cartao-ig .ig-corpo{min-width:0;flex:1}
+.cartao-ig .ig-coracao{width:14px;height:14px;flex:none;margin-left:auto}
+.cartao-ig p.ig-texto{margin:0;padding-right:28px;max-width:none;font-size:14px;line-height:18px;color:#262626;white-space:pre-wrap;overflow-wrap:anywhere}
+.cartao-ig p.ig-texto strong{font-weight:600;color:#262626}
+.cartao-ig p.ig-acoes{display:flex;align-items:center;gap:12px;margin:8px 0 0;max-width:none;font-size:12px;line-height:16px;font-weight:600;color:#737373}
+.cartao-ig a.ver-instagram{margin-top:auto;font-size:14px;line-height:20px;color:#5f6368;text-decoration:none}
+.cartao-ig a.ver-instagram:hover{text-decoration:underline}
+
+.nota-google{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin:var(--s-4) 0 0;font-family:Roboto,Arial,sans-serif;color:#3c4043;font-size:14px;line-height:20px}
+.nota-google .nota-num{font-size:20px;font-weight:400;color:#202124;line-height:24px}
+.nota-google .estrelas .estrela,.nota-google .estrelas svg,.nota-google .estrelas .enche{width:16px;height:16px}
+.nota-google .estrelas .enche{height:16px}
+.nota-resumo-linha{text-align:center;margin:var(--s-6) auto 0}
+
+.frase-dela{margin:var(--s-5) 0;padding:0 0 0 var(--s-5);border-left:2px solid var(--bege);max-width:var(--texto-max)}
+.frase-dela p{font-family:var(--f-titulo);font-size:var(--t-1);line-height:1.45;margin:0 0 var(--s-2)}
+.frase-dela cite{font-style:normal;color:var(--texto-2);font-size:1rem}
+.sobretitulo{font-size:.9375rem;letter-spacing:.14em;text-transform:uppercase;color:var(--vinho);margin:0 0 var(--s-3)}
+
+.compra{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--s-6);align-items:center}
+@media (min-width:900px){.compra{grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:var(--s-8)}}
+.compra figure{margin:0}
+.compra img{width:100%;max-width:420px;aspect-ratio:3/4;object-fit:cover;object-position:50% 25%}
+
+.links-curtos{list-style:none;margin:var(--s-4) 0 0;padding:0;display:flex;flex-wrap:wrap;gap:var(--s-2) var(--s-4);justify-content:center}
+.links-curtos a{font-size:1rem;color:var(--texto-2)}
+
+.faixa-trajetoria{background:var(--bege-claro);padding:var(--s-6) 0}
+.faixa-trajetoria .envolve{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--s-4);align-items:center}
+@media (min-width:900px){.faixa-trajetoria .envolve{grid-template-columns:minmax(0,8fr) minmax(0,4fr);gap:var(--s-8)}.faixa-trajetoria .botao{justify-self:end}}
+.faixa-trajetoria p{margin:0;max-width:none}
+.faixa-trajetoria .botao{justify-self:start}
+@media (min-width:900px){.faixa-trajetoria .botao{justify-self:end}}
+
+.pecas-detalhe p{text-align:left;max-width:none}
+.pecas-detalhe img{object-position:50% 8%}
+
+.indice{list-style:none;margin:var(--s-5) 0 0;padding:0;display:flex;flex-wrap:wrap;gap:var(--s-2) var(--s-3);justify-content:center}
+.indice a{display:inline-flex;align-items:center;min-height:44px;padding:0 var(--s-4);border:1px solid var(--bege);border-radius:999px;font-size:.9375rem;text-decoration:none}
+.indice a:hover{background:var(--bege);color:var(--texto)}
+.faixa-titulo .indice + .botoes{margin-top:var(--s-5)}
+
+.linha-foto{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--s-5);align-items:center}
+@media (min-width:900px){.linha-foto{grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:var(--s-8)}.linha-foto.inverte figure{order:2}.linha-foto.inverte{grid-template-columns:minmax(0,8fr) minmax(0,4fr)}}
+.linha-foto figure{margin:0}
+.linha-foto img{width:100%;max-width:340px;aspect-ratio:4/5;object-fit:cover;object-position:50% 4%;background:var(--areia)}
+.linha-foto h2{font-size:var(--t-2)}
+.bloco[id]{scroll-margin-top:var(--s-5)}
+@media (min-width:900px){.bloco-historias .envolve{text-align:center}.bloco-historias .envolve p{margin-left:auto;margin-right:auto}}
