@@ -749,7 +749,7 @@ body[data-pagina="loja"] .indice2 span{font-size:.9375rem;color:var(--texto-2)}
 body[data-pagina="loja"] :where(main) .mom-t{font-family:"Tenor Sans",serif;font-size:clamp(1.5rem,2.2vw,1.875rem);color:var(--texto);line-height:1.25}
 body[data-pagina="loja"] .fila.f3l{grid-template-columns:repeat(3,minmax(0,1fr))}
 body[data-pagina="loja"] .fila.f3l .ph{aspect-ratio:4/3}
-@media (max-width:599px){body[data-pagina="loja"] .fila.f3l{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:599px){body[data-pagina="loja"] .fila.f3l{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}body[data-pagina="loja"] .fila.f3l .ph{aspect-ratio:3/4}}
 body[data-pagina="loja"] .visita .prat-p p{margin:0 0 var(--s-4)}
 body[data-pagina="loja"] .visita-dados{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;margin:var(--s-5) 0}
 body[data-pagina="loja"] .visita-dados div{display:grid;grid-template-columns:9.5rem minmax(0,1fr);gap:12px}
