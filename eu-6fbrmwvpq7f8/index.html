@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Aparelho da casa</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    background: #fbf8f4; color: #2b2326; font: 17px/1.5 -apple-system, "Segoe UI", Arial, sans-serif; padding: 24px; }
+  main { max-width: 440px; width: 100%; text-align: center; }
+  h1 { font-size: 22px; line-height: 1.3; margin: 0 0 12px; }
+  p { margin: 0 0 12px; color: #5a4f53; }
+  .estado { font-size: 15px; min-height: 22px; }
+</style>
+</head>
+<body>
+<main>
+  <h1 id="msg">Pronto. Este aparelho é da casa.</h1>
+  <p>As visitas e os cliques feitos neste navegador não entram mais na contagem do site.</p>
+  <p class="estado" id="estado"></p>
+</main>
+<script src="../assets/js/config.js"></script>
+<script>
+(function () {
+  var estado = document.getElementById("estado");
+  var vid = null;
+  try {
+    localStorage.setItem("vt_dono", "1");
+    vid = localStorage.getItem("vt_vid");
+    if (!vid) {
+      vid = Date.now().toString(36) + Math.random().toString(36).slice(2, 10);
+      localStorage.setItem("vt_vid", vid);
+    }
+  } catch (e) {}
+  var ep = (window.VT_CONFIG && VT_CONFIG.medicao && VT_CONFIG.medicao.endpoint) || "";
+  if (!ep || !vid) { estado.textContent = "Marcado neste navegador."; return; }
+  fetch(ep.replace(/\/event$/, "/owner"), {
+    method: "POST", keepalive: true,
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ vid: vid })
+  }).then(function (r) {
+    estado.textContent = r.ok ? "Registrado também no contador." : "Marcado neste navegador.";
+  }).catch(function () { estado.textContent = "Marcado neste navegador."; });
+})();
+</script>
+</body>
+</html>

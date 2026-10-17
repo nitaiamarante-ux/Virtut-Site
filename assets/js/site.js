@@ -168,7 +168,24 @@
     return "/";
   }
 
+  function pctRolagem(y, vh, h) {
+    y = +y || 0; vh = +vh || 0; h = +h || 0;
+    if (h <= 0) return 0;
+    return Math.max(0, Math.min(100, Math.round((y + vh) / h * 100)));
+  }
+  function marcosAlcancados(pct, jaEnviados) {
+    var out = [];
+    [50, 90].forEach(function (m) {
+      if (pct >= m && (jaEnviados || []).indexOf(String(m)) === -1) out.push(String(m));
+    });
+    return out;
+  }
+  function blocoVisto(ratio, interAltura, vh) {
+    return (+ratio >= 0.5) || (+vh > 0 && +interAltura >= 0.5 * +vh);
+  }
+
   var puras = {
+    pctRolagem: pctRolagem, marcosAlcancados: marcosAlcancados, blocoVisto: blocoVisto,
     origemDe: origemDe, marcaOrigem: marcaOrigem, linkWhatsApp: linkWhatsApp,
     estadoLoja: estadoLoja, mensagemAviso: mensagemAviso, raizDe: raizDe,
     agoraSP: agoraSP, HORARIO_PADRAO: HORARIO_PADRAO, sanitiza: sanitiza
@@ -208,6 +225,7 @@
     try {
       var m = CFG.medicao;
       if (!m || m.ligada !== true) return;
+      if (guardado("vt_dono", "localStorage") === "1") return;
       var pagina = (document.body && document.body.dataset && document.body.dataset.pagina) || "";
       var p = {
         tipo: tipo, posicao: pagina + "|" + SRC, site: "virtut",
@@ -306,6 +324,47 @@
     });
 
     track("vt_visita");
+
+    var enviados = [];
+    var rolando = false;
+    var aoRolar = function () {
+      if (rolando) return;
+      rolando = true;
+      var quadro = root.requestAnimationFrame || function (f) { return setTimeout(f, 100); };
+      quadro(function () {
+        rolando = false;
+        var de = document.documentElement;
+        var pct = pctRolagem(root.pageYOffset || de.scrollTop || 0, root.innerHeight || de.clientHeight || 0,
+          Math.max(de.scrollHeight || 0, document.body ? document.body.scrollHeight : 0));
+        marcosAlcancados(pct, enviados).forEach(function (m) {
+          enviados.push(m);
+          track("vt_rolagem", { marco: m });
+        });
+        if (enviados.length >= 2) root.removeEventListener("scroll", aoRolar);
+      });
+    };
+    root.addEventListener("scroll", aoRolar, { passive: true });
+
+    if (root.IntersectionObserver) {
+      var secoes = document.querySelectorAll("main section[id]");
+      if (secoes.length) {
+        var vistos = {};
+        var limiares = [];
+        for (var q = 0; q <= 20; q++) limiares.push(q / 20);
+        var obs = new root.IntersectionObserver(function (entradas) {
+          entradas.forEach(function (en) {
+            var id = en.target.id;
+            if (!id || vistos[id]) return;
+            if (blocoVisto(en.intersectionRatio, en.intersectionRect ? en.intersectionRect.height : 0, root.innerHeight || 0)) {
+              vistos[id] = true;
+              obs.unobserve(en.target);
+              track("vt_bloco", { bloco: sanitiza(id) });
+            }
+          });
+        }, { threshold: limiares });
+        Array.prototype.forEach.call(secoes, function (el) { obs.observe(el); });
+      }
+    }
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciar);
