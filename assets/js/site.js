@@ -311,3 +311,16 @@
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", iniciar);
   else iniciar();
 })(typeof window !== "undefined" ? window : globalThis);
+
+
+(function () {
+  if (typeof document === "undefined") return;
+  var b = document.body, cab = document.querySelector("header.topo");
+  if (!b || !b.classList.contains("topo-unico") || !cab) return;
+  function mede() { if (!b.classList.contains("rolado")) document.documentElement.style.setProperty("--topo-unico-h", cab.offsetHeight + "px"); }
+  function rola() { var y = window.scrollY || 0; if (y > 160) b.classList.add("rolado"); else if (y < 6) b.classList.remove("rolado"); }
+  rola(); mede();
+  window.addEventListener("scroll", rola, { passive: true });
+  window.addEventListener("resize", mede);
+  window.addEventListener("load", mede);
+})();

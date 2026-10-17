@@ -6,6 +6,7 @@
   var ticking = false;
   function aplica() {
     ticking = false;
+    if (corpo.classList.contains("topo-unico")) return; // cabeçalho único: o site.js cuida (histerese)
     var y = window.pageYOffset || document.documentElement.scrollTop || 0;
     corpo.classList.toggle("rolado", y > 24);
   }
