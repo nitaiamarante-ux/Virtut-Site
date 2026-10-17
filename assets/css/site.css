@@ -600,3 +600,267 @@ button.acao-3{background:none;border:0;cursor:pointer;text-align:left}
 .cartao-google a.ver-google,.cartao-ig a.ver-instagram{font-size:.9375rem}
 .rodape p,.rodape li,.pequeno,.discreto.pequeno,.pecas p,.links-curtos a,.legenda{font-size:1.0625rem}
 .rodape-base p{font-size:1rem}
+
+
+
+body[data-pagina="loja"]{--quente:#FAFAFA;--linho:var(--areia);--cab:172px}
+body[data-pagina="loja"] :where(main){overflow-x:clip}
+body[data-pagina="loja"] :where(main) h1,body[data-pagina="loja"] :where(main) h2,body[data-pagina="loja"] :where(main) h3{font-family:var(--f-titulo);font-weight:400;color:var(--texto)}
+body[data-pagina="loja"] :where(main) h2,body[data-pagina="loja"] :where(main) h3{text-transform:none;letter-spacing:.02em;line-height:1.2}
+body[data-pagina="loja"] :where(main) p{font-size:1.125rem;line-height:1.65;max-width:34rem;color:var(--texto)}
+body[data-pagina="loja"] :where(main) em{font-style:normal;color:var(--vinho-escuro)}
+body[data-pagina="loja"] :where(main) .rotulo{font-family:var(--f-corpo);font-size:.8125rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--vinho-escuro);margin:0 0 var(--s-5);line-height:1.5}
+body[data-pagina="loja"] :where(main) h1{font-size:clamp(2.7rem,4.4vw,4.3rem);letter-spacing:.015em;line-height:1.08;text-transform:none;margin:0 0 var(--s-6)}
+body[data-pagina="loja"] :where(main) h2{font-size:clamp(1.9rem,2.8vw,2.6rem);margin:0 0 var(--s-5)}
+body[data-pagina="loja"] :where(main) .cit{margin:0 0 var(--s-6);padding:0;border:0}
+body[data-pagina="loja"] :where(main) .cit p,body[data-pagina="loja"] :where(main) blockquote p{font-family:var(--f-titulo);font-size:clamp(1.3rem,1.75vw,1.65rem);line-height:1.42;letter-spacing:.005em;max-width:30rem;margin:0}
+body[data-pagina="loja"] :where(main) figure{margin:0}
+body[data-pagina="loja"] :where(main) .foto{position:relative}
+body[data-pagina="loja"] :where(main) .foto img{width:100%;height:auto;object-fit:cover;background:var(--areia)}
+body[data-pagina="loja"] :where(main) figcaption{font-size:.9375rem;line-height:1.4;color:var(--texto-2);padding-top:var(--s-3)}
+body[data-pagina="loja"] :where(main) .botoes{margin-top:var(--s-6)}
+body[data-pagina="loja"] .f-branco{background:var(--fundo)}
+body[data-pagina="loja"] .f-linho{background:var(--linho)}
+body[data-pagina="loja"] .respiro{background:var(--vinho);padding:var(--s-9) var(--s-4);text-align:center}
+body[data-pagina="loja"] .respiro blockquote{margin:0 auto;max-width:56rem}
+body[data-pagina="loja"] :where(main) .respiro p{color:#FFFFFF;font-size:clamp(1.75rem,3.6vw,3.1rem);line-height:1.3;max-width:none;margin:0 auto}
+body[data-pagina="loja"] .respiro cite{display:block;margin-top:var(--s-6);font-style:normal;font-size:.8125rem;letter-spacing:.22em;text-transform:uppercase;color:#FFFFFF}
+body[data-pagina="loja"] .b-vwrap{position:relative}
+body[data-pagina="loja"] .b-play{position:absolute;left:50%;top:50%;width:76px;height:76px;margin:-38px 0 0 -38px;padding:0;border:0;background:none;cursor:pointer;border-radius:50%}
+body[data-pagina="loja"] .b-play[hidden]{display:none}
+body[data-pagina="loja"] .b-play svg{width:100%;height:100%;display:block;filter:drop-shadow(0 2px 8px rgba(0,0,0,.35))}
+body[data-pagina="loja"] .b-video video{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;background:#1c1a18}
+body[data-pagina="loja"] .rotulo{font-size:1rem;font-weight:600;letter-spacing:.12em}
+body[data-pagina="loja"] cite{font-size:1rem !important;font-weight:600;letter-spacing:.12em !important}
+
+
+body[data-pagina="loja"] .rotulo{font-size:1rem;font-weight:600;letter-spacing:.12em}
+body[data-pagina="loja"] :where(main) p{max-width:36rem}
+body[data-pagina="loja"] .f-vinho{background:#F5EBEC}
+body[data-pagina="loja"] :where(main) .acoes{margin-top:var(--s-5)}
+body[data-pagina="loja"] .cat .acoes{margin-top:var(--s-4)}
+body[data-pagina="loja"] .indice{justify-content:flex-start;margin-top:var(--s-5)}
+body[data-pagina="loja"] .indice a{font-size:1rem}
+body[data-pagina="loja"] .abre p.linha{color:var(--texto-2);font-size:1.0625rem}
+body[data-pagina="loja"] :where(main) .lead{font-size:1.1875rem}
+
+body[data-pagina="loja"] .mostra{background:#F5EBEC;padding:var(--s-8) 0}
+body[data-pagina="loja"] .mostra-grade{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--s-6);align-items:center}
+body[data-pagina="loja"] :where(main) .b-video{width:100%;max-width:300px;margin:0 auto}
+body[data-pagina="loja"] .b-video video{display:block;width:100%;height:auto;aspect-ratio:9/16;object-fit:cover;background:#1c1a18}
+body[data-pagina="loja"] .b-video figcaption{padding-top:var(--s-3);font-size:.9375rem}
+@media (max-width:899px){body[data-pagina="loja"] .b-play{top:42%;width:60px;height:60px;margin:-30px 0 0 -30px}}
+@media (min-width:900px){
+  body[data-pagina="loja"] .mostra{padding:var(--s-9) 0}
+  body[data-pagina="loja"] .mostra-grade{grid-template-columns:minmax(0,1fr) 400px;gap:var(--s-9);justify-content:space-between}
+  body[data-pagina="loja"] :where(main) .b-video{max-width:400px;margin:0}
+}
+
+body[data-pagina="loja"] .servicos{background:var(--fundo);padding:var(--s-8) 0}
+body[data-pagina="loja"] .servicos h2{text-align:center;margin-bottom:var(--s-7)}
+body[data-pagina="loja"] .cards3{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--s-5)}
+body[data-pagina="loja"] .card-serv{background:var(--linho);padding:var(--s-6) var(--s-5);display:flex;flex-direction:column}
+body[data-pagina="loja"] :where(main) .card-serv h3{font-size:1.625rem;margin:0 0 var(--s-4)}
+body[data-pagina="loja"] .card-serv p{font-size:1.0625rem}
+body[data-pagina="loja"] .card-serv strong{font-weight:600}
+body[data-pagina="loja"] .card-serv .cartao-google{margin:var(--s-4) 0 0;max-width:none}
+body[data-pagina="loja"] .card-serv .acoes{margin-top:auto;padding-top:var(--s-5)}
+body[data-pagina="loja"] .card-serv .acao-3{padding-left:0}
+@media (min-width:900px){
+  body[data-pagina="loja"] .servicos{padding:var(--s-9) 0}
+  body[data-pagina="loja"] .cards3{grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s-6)}
+  body[data-pagina="loja"] .card-serv{padding:var(--s-7) var(--s-6)}
+}
+body[data-pagina="loja"] figcaption{margin:0}
+body[data-pagina="loja"] main .acao-3{padding-left:0;margin-left:-12px}
+body[data-pagina="loja"] .card-serv .acao-3{font-size:1.125rem;gap:8px;padding-right:0}
+body[data-pagina="loja"] .duas-colunas .discreto{margin-top:var(--s-4)}
+@media (min-width:900px){body[data-pagina="loja"] .duas-colunas{grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:var(--s-8);align-items:start}}
+
+
+
+body[data-pagina="loja"] .abre-b{background:var(--fundo);display:flex;flex-direction:column}
+body[data-pagina="loja"] .abre-b .faixa-int{order:2;width:100%}
+@media (max-width:899px),(min-height:780px){body[data-pagina="loja"] .abre-b .faixa-int{order:-1}}
+@media (min-width:900px){
+  body[data-pagina="loja"] .abre-b .abre-txt{max-width:none}
+  body[data-pagina="loja"] .abre-b .acoes{flex-direction:row;flex-wrap:wrap;max-width:none;gap:16px}
+  body[data-pagina="loja"] .abre-b .acoes > a{flex:0 1 31rem}
+  body[data-pagina="loja"] .abre-b .faixa-int{margin-top:var(--s-3)}
+}
+body[data-pagina="loja"] .faixa-int{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:6px;height:clamp(200px,31vw,430px);overflow:hidden}
+body[data-pagina="loja"] .faixa-int figure{margin:0;position:relative}
+body[data-pagina="loja"] .faixa-int img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+body[data-pagina="loja"] .abre-b .abre-txt{padding-top:var(--s-4);padding-bottom:var(--s-5);max-width:none}
+body[data-pagina="loja"] :where(main) .abre-b h1{font-size:clamp(2.3rem,3.4vw,3.2rem);margin-bottom:var(--s-4);max-width:34ch}
+body[data-pagina="loja"] .abre-b .rotulo{margin-bottom:var(--s-4)}
+body[data-pagina="loja"] .abre-b p{max-width:56rem}
+body[data-pagina="loja"] .abre-b .rotulo{margin-bottom:var(--s-3)}
+body[data-pagina="loja"] .abre-b .acoes{margin-top:var(--s-4)}
+@media (max-width:899px){body[data-pagina="loja"] .abre-b .faixa-int{height:150px}body[data-pagina="loja"] :where(main) .abre-b h1{font-size:2.05rem}body[data-pagina="loja"] :where(main) .abre-b .lead{font-size:1.0625rem;line-height:1.5}body[data-pagina="loja"] .abre-b .abre-txt{padding-top:var(--s-4)}}
+
+body[data-pagina="loja"] .momento{padding:var(--s-8) 0}
+body[data-pagina="loja"] .mom-cab{margin-bottom:var(--s-7)}
+body[data-pagina="loja"] .mom-cab .rotulo{margin-bottom:var(--s-2)}
+body[data-pagina="loja"] :where(main) .mom-t{font-size:1.1875rem;color:var(--texto-2);margin:0}
+body[data-pagina="loja"] .prat + .prat{margin-top:var(--s-9)}
+body[data-pagina="loja"] :where(main) .prat h2{font-size:clamp(2rem,3.2vw,2.875rem);margin:0 0 var(--s-3)}
+body[data-pagina="loja"] .prat .prat-p{max-width:48rem;margin:0 0 var(--s-5)}
+body[data-pagina="loja"] .fila{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0;padding:0;list-style:none}
+body[data-pagina="loja"] .fila figure{margin:0}
+body[data-pagina="loja"] .fila .ph{position:relative;aspect-ratio:3/4;overflow:hidden;background:var(--areia)}
+body[data-pagina="loja"] .fila .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+body[data-pagina="loja"] .fila figcaption{padding-top:var(--s-2);font-size:.9375rem;line-height:1.35;color:var(--texto-2)}
+body[data-pagina="loja"] .prat .acoes{margin-top:var(--s-5)}
+body[data-pagina="loja"] .prat .acao-3{padding-left:0}
+@media (min-width:900px){
+  body[data-pagina="loja"] .momento{padding:var(--s-9) 0}
+  body[data-pagina="loja"] .fila{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+  body[data-pagina="loja"] .fila.f2{grid-template-columns:repeat(2,minmax(0,1fr));max-width:none}
+  body[data-pagina="loja"] .prat.p2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:1fr auto auto auto 1fr;column-gap:var(--s-9)}
+  body[data-pagina="loja"] .prat.p2 .fila{grid-column:1;grid-row:1 / 6}
+  body[data-pagina="loja"] .prat.p2 > h2,body[data-pagina="loja"] .prat.p2 > .prat-p,body[data-pagina="loja"] .prat.p2 > .acoes{grid-column:2}
+  body[data-pagina="loja"] .prat.p2 > h2{grid-row:2}
+  body[data-pagina="loja"] .prat.p2 > .prat-p{grid-row:3;margin-bottom:0}
+  body[data-pagina="loja"] .prat.p2 > .acoes{grid-row:4}
+  body[data-pagina="loja"] .mom-cab{margin-bottom:var(--s-7)}
+}
+
+body[data-pagina="loja"] .letrao{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--s-4)}
+body[data-pagina="loja"] :where(main) .letrao h2{font-size:clamp(2.25rem,5.2vw,4.25rem);line-height:1.1;margin:0}
+body[data-pagina="loja"] .letrao + .letrao{margin-top:var(--s-8)}
+body[data-pagina="loja"] .prat + .letrao{margin-top:var(--s-9)}
+body[data-pagina="loja"] .letrao .acoes{margin-top:var(--s-4)}
+body[data-pagina="loja"] .letrao .acao-3{padding-left:0}
+@media (min-width:900px){
+  body[data-pagina="loja"] .letrao{grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:var(--s-8);align-items:end}
+  body[data-pagina="loja"] .letrao .letrao-d{padding-bottom:var(--s-2)}
+}
+body[data-pagina="loja"] .letrao-d p{margin:0}
+
+
+
+body[data-pagina="loja"] .indice2{list-style:none;margin:var(--s-6) 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (min-width:900px){body[data-pagina="loja"] .indice2{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:1008px}}
+body[data-pagina="loja"] .indice2 a{display:flex;flex-direction:column;gap:2px;height:100%;padding:14px 16px;border-radius:16px;background:var(--linho);color:var(--texto);text-decoration:none;transition:background .2s}
+body[data-pagina="loja"] .indice2 a:hover{background:#E9DFD3}
+body[data-pagina="loja"] .indice2 strong{font-size:1.0625rem;font-weight:600;color:var(--vinho,#924A55)}
+body[data-pagina="loja"] .indice2 span{font-size:.9375rem;color:var(--texto-2)}
+body[data-pagina="loja"] :where(main) .mom-t{font-family:"Tenor Sans",serif;font-size:clamp(1.5rem,2.2vw,1.875rem);color:var(--texto);line-height:1.25}
+body[data-pagina="loja"] .fila.f3l{grid-template-columns:repeat(3,minmax(0,1fr))}
+body[data-pagina="loja"] .fila.f3l .ph{aspect-ratio:4/3}
+@media (max-width:599px){body[data-pagina="loja"] .fila.f3l{grid-template-columns:minmax(0,1fr)}}
+body[data-pagina="loja"] .visita .prat-p p{margin:0 0 var(--s-4)}
+body[data-pagina="loja"] .visita-dados{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;margin:var(--s-5) 0}
+body[data-pagina="loja"] .visita-dados div{display:grid;grid-template-columns:9.5rem minmax(0,1fr);gap:12px}
+body[data-pagina="loja"] .visita-dados dt{font-weight:600;font-size:.9375rem;letter-spacing:.08em;text-transform:uppercase;color:var(--vinho,#924A55)}
+body[data-pagina="loja"] .visita-dados dd{margin:0}
+body[data-pagina="loja"] .nota-google{margin:var(--s-5) 0 var(--s-3);font-family:inherit}
+body[data-pagina="loja"] .visita .cartao-google{max-width:30rem}
+
+body[data-pagina="loja"] .mom-linha{margin:var(--s-3) 0 0;color:var(--texto-2);font-size:1rem;max-width:44rem}
+body[data-pagina="loja"] .visita-f{position:relative;isolation:isolate;color:#FFFFFF;background:#2a2020 url(../img/fachada-virtut-larga.webp) center 60%/cover no-repeat;padding:var(--s-9) 0}
+body[data-pagina="loja"] .visita-f::before{content:"";position:absolute;inset:0;background:rgba(24,18,18,.84);z-index:-1}
+@media (min-width:900px){body[data-pagina="loja"] .visita-f{background-size:cover;background-position:30% 50%}body[data-pagina="loja"] .visita-f::before{background:linear-gradient(to right,rgba(24,18,18,.93) 0%,rgba(24,18,18,.88) 50%,rgba(24,18,18,.55) 72%,rgba(24,18,18,.15) 100%)}}
+body[data-pagina="loja"] .visita-in{max-width:36rem}
+body[data-pagina="loja"] .visita-f .rotulo{color:#E8B4BB}
+body[data-pagina="loja"] :where(main) .visita-f .mom-t,body[data-pagina="loja"] :where(main) .visita-f h2,body[data-pagina="loja"] .visita-f p,body[data-pagina="loja"] .visita-f dd{color:#FFFFFF}
+body[data-pagina="loja"] :where(main) .visita-f h2{font-size:clamp(2rem,3.2vw,2.875rem);margin:0 0 var(--s-4)}
+body[data-pagina="loja"] .visita-f .visita-dados dt{color:#E8B4BB}
+body[data-pagina="loja"] .visita-f .visita-dados{border-top:1px solid rgba(255,255,255,.25);padding-top:var(--s-5)}
+body[data-pagina="loja"] .visita-f .cartao-google{color:var(--texto)}
+body[data-pagina="loja"] .visita-f .cartao-google p{color:var(--texto)}
+body[data-pagina="loja"] .visita-f .acoes{margin-top:var(--s-6)}
+
+
+body[data-pagina="loja"] .abre-b{display:block}
+body[data-pagina="loja"] .abre-escuro{position:relative;isolation:isolate;color:#FFFFFF;background:#2a2020 url(../img/fachada-virtut-abertura-loja.webp?v=5) 74% 40%/cover no-repeat}
+body[data-pagina="loja"] .abre-escuro::before{content:"";position:absolute;inset:0;background:rgba(24,18,18,.8);z-index:-1}
+@media (min-width:900px){body[data-pagina="loja"] .abre-escuro{background-size:auto 100%;background-position:100% 50%;background-color:#1e1717}body[data-pagina="loja"] .abre-escuro::before{background:linear-gradient(to right,rgba(24,18,18,.93) 0%,rgba(24,18,18,.85) calc(100% - 900px),rgba(24,18,18,0) calc(100% - 640px))}}
+body[data-pagina="loja"] .abre-escuro .abre-txt{max-width:40rem;padding-top:var(--s-8);padding-bottom:var(--s-8)}
+body[data-pagina="loja"] .abre-escuro .rotulo{color:#E8B4BB}
+body[data-pagina="loja"] :where(main) .abre-escuro h1,body[data-pagina="loja"] :where(main) .abre-escuro .lead{color:#FFFFFF}
+body[data-pagina="loja"] .abre-escuro .acoes{flex-direction:row;flex-wrap:wrap;gap:12px}
+body[data-pagina="loja"] .abre-escuro .acoes > a{flex:1 1 15rem}
+body[data-pagina="loja"] .abre-escuro .acoes strong{white-space:nowrap}
+body[data-pagina="loja"] .abre-idx{padding-top:var(--s-6);padding-bottom:var(--s-7)}
+body[data-pagina="loja"] .abre-idx .indice2{margin-top:0}
+
+body[data-pagina="loja"] .visita-f{background-image:url(../img/interior-virtut-araras-1200.webp)}
+@media (min-width:900px){body[data-pagina="loja"] .visita-f{background-position:50% 45%}}
+
+
+
+html:has(body[data-pagina="loja"]){scroll-padding-top:150px}
+body[data-pagina="loja"] .topo{position:sticky;top:0;z-index:50;transition:background-color .35s ease,border-color .35s ease,box-shadow .35s ease}
+body[data-pagina="loja"] .topo .topo-linha,body[data-pagina="loja"] .topo .marca img,body[data-pagina="loja"] .topo .nav li a{transition:min-height .3s ease,width .3s ease,filter .35s ease,color .35s ease}
+body[data-pagina="loja"]:not(.rolado) .topo:not(.menu-aberto){background:#1e1717;border-bottom-color:transparent}
+body[data-pagina="loja"]:not(.rolado) .topo:not(.menu-aberto) .marca img{filter:brightness(0) invert(1)}
+body[data-pagina="loja"]:not(.rolado) .topo:not(.menu-aberto) .topo-contato,body[data-pagina="loja"]:not(.rolado) .topo:not(.menu-aberto) .topo-contato svg,body[data-pagina="loja"]:not(.rolado) .topo:not(.menu-aberto) .topo-contato small,body[data-pagina="loja"]:not(.rolado) .topo:not(.menu-aberto) .menu-botao{color:#FFFFFF}
+body[data-pagina="loja"]:not(.rolado) .topo:not(.menu-aberto) .menu-botao{background:rgba(255,255,255,.12)}
+@media (min-width:900px){
+ body[data-pagina="loja"]:not(.rolado) .topo .nav{background:#1e1717;border-top-color:rgba(255,255,255,.14) !important}
+ body[data-pagina="loja"]:not(.rolado) .topo .nav a{color:#FFFFFF}
+ body[data-pagina="loja"]:not(.rolado) .topo .nav a[aria-current="page"]{color:#E8B4BB}
+ body[data-pagina="loja"].rolado .topo .topo-linha{min-height:68px}
+ body[data-pagina="loja"].rolado .topo .marca img{width:132px}
+ body[data-pagina="loja"].rolado .topo .nav li a{min-height:46px}
+}
+body[data-pagina="loja"].rolado .topo{box-shadow:0 1px 0 var(--linha)}
+
+
+body[data-pagina="loja"] .abre-escuro::after{content:"";position:absolute;left:0;right:0;top:0;height:56px;background:linear-gradient(to bottom,#1e1717 0%,rgba(30,23,23,0) 100%);z-index:-1;pointer-events:none}
+body[data-pagina="loja"]:not(.rolado) .topo:not(.menu-aberto),body[data-pagina="loja"]:not(.rolado) .topo .nav{border-bottom:0 !important;box-shadow:none}
+html:has(body[data-pagina="loja"]){overflow-anchor:none}
+
+
+body[data-pagina="loja"] .momento,body[data-pagina="loja"] .mostra,body[data-pagina="loja"] .servicos,body[data-pagina="loja"] .visita-f{padding:var(--s-7) 0}
+@media (min-width:900px){body[data-pagina="loja"] .momento,body[data-pagina="loja"] .mostra,body[data-pagina="loja"] .servicos,body[data-pagina="loja"] .visita-f{padding:var(--s-8) 0}}
+body[data-pagina="loja"] .prat + .prat,body[data-pagina="loja"] .prat + .letrao{margin-top:var(--s-8)}
+body[data-pagina="loja"] .letrao + .letrao{margin-top:var(--s-7)}
+body[data-pagina="loja"] .mom-cab{margin-bottom:var(--s-6)}
+body[data-pagina="loja"] .abre-idx{padding-bottom:var(--s-5)}
+@media (min-width:900px){
+ body[data-pagina="loja"] .mostra-grade{grid-template-columns:minmax(0,1fr) 340px;gap:var(--s-8)}
+ body[data-pagina="loja"] :where(main) .b-video{max-width:340px}
+}
+
+
+@media (min-width:900px){
+ body[data-pagina="loja"] .mostra-grade{grid-template-columns:340px minmax(0,34rem);justify-content:center;gap:var(--s-8)}
+ body[data-pagina="loja"] .mostra-grade .b-video{grid-column:1;grid-row:1}
+ body[data-pagina="loja"] .mostra-grade .mostra-txt{grid-column:2;grid-row:1}
+ body[data-pagina="loja"] :where(main) .mostra-txt h2{font-size:clamp(2rem,3.2vw,2.875rem)}
+ body[data-pagina="loja"] .mostra-txt p{font-size:1.1875rem;line-height:1.6}
+}
+body[data-pagina="loja"] .serv-foto{margin:var(--s-5) 0 0;aspect-ratio:4/3;overflow:hidden}
+body[data-pagina="loja"] .serv-foto img{width:100%;height:100%;object-fit:cover;object-position:50% 30%;display:block}
+body[data-pagina="loja"] main .bloco{padding:var(--s-7) 0}
+@media (min-width:900px){body[data-pagina="loja"] main .bloco{padding:var(--s-8) 0}}
+
+body[data-pagina="loja"] .mostra-lista{margin:0 0 var(--s-4);padding-left:1.1em}
+body[data-pagina="loja"] .mostra-lista li{margin:0 0 var(--s-2);font-size:1.0625rem;line-height:1.55}
+body[data-pagina="loja"] .mostra-txt p{margin:0 0 var(--s-4)}
+@media (min-width:900px){body[data-pagina="loja"] .mostra-txt p{font-size:1.125rem}}
+
+
+body[data-pagina="loja"] .presentes{background:var(--vinho);color:#FFFFFF;padding:var(--s-7) 0}
+@media (min-width:900px){body[data-pagina="loja"] .presentes{padding:var(--s-8) 0}body[data-pagina="loja"] .pres-grade{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--s-8);align-items:center}}
+body[data-pagina="loja"] .presentes .rotulo{color:#F3D3D8}
+body[data-pagina="loja"] :where(main) .presentes h2{color:#FFFFFF;font-size:clamp(2rem,3.4vw,3rem);line-height:1.15;margin:0 0 var(--s-4)}
+body[data-pagina="loja"] .pres-lead{color:#FFFFFF;font-size:1.125rem;line-height:1.6;margin:0 0 var(--s-5);max-width:34rem}
+body[data-pagina="loja"] .acao-1.acao-claro{background:#FFFFFF;color:var(--vinho);box-shadow:0 8px 22px rgba(40,10,16,.28);max-width:26rem}
+body[data-pagina="loja"] .acao-1.acao-claro .acao-ic{background:var(--vinho);color:#FFFFFF}
+body[data-pagina="loja"] .acao-1.acao-claro .acao-txt span{color:var(--texto-2)}
+body[data-pagina="loja"] .acao-1.acao-claro .acao-seta{border-color:var(--vinho);color:var(--vinho)}
+body[data-pagina="loja"] .pres-passos{background:#FFFFFF;color:var(--texto);border-radius:16px;padding:var(--s-6) var(--s-5);margin-top:var(--s-6)}
+@media (min-width:900px){body[data-pagina="loja"] .pres-passos{margin-top:0;padding:var(--s-6)}}
+body[data-pagina="loja"] :where(main) .pres-passos h3{font-family:var(--f-corpo);font-size:.9375rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--vinho);margin:0 0 var(--s-5)}
+body[data-pagina="loja"] .pres-passos ol{list-style:none;margin:0;padding:0;counter-reset:p}
+body[data-pagina="loja"] .pres-passos li{counter-increment:p;position:relative;padding-left:56px;margin:0 0 var(--s-5)}
+body[data-pagina="loja"] .pres-passos li::before{content:counter(p);position:absolute;left:0;top:0;width:40px;height:40px;border-radius:50%;background:#F5EBEC;color:var(--vinho);font-family:var(--f-titulo);font-size:1.25rem;display:flex;align-items:center;justify-content:center}
+body[data-pagina="loja"] .pres-passos li strong{display:block;font-family:var(--f-titulo);font-weight:400;font-size:1.375rem;margin-bottom:4px}
+body[data-pagina="loja"] .pres-passos li span{display:block;font-size:1.0625rem;line-height:1.55;color:var(--texto-2)}
+body[data-pagina="loja"] .pres-vale{border-top:1px solid var(--linha);padding-top:var(--s-4)}
+body[data-pagina="loja"] :where(main) .pres-vale h3{margin:0 0 var(--s-2)}
+body[data-pagina="loja"] .pres-vale p{margin:0;font-size:1.0625rem}
