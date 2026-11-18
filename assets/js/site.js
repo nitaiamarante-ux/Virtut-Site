@@ -184,7 +184,51 @@
     return (+ratio >= 0.5) || (+vh > 0 && +interAltura >= 0.5 * +vh);
   }
 
+  function saneiaKw(v) {
+    v = String(v == null ? "" : v);
+    if (/^\s*\{[^}]*\}\s*$/.test(v)) return ""; // modelo não preenchido pelo Google ({keyword})
+    return v.toLowerCase().replace(/[^a-z0-9\u00e0-\u00f6\u00f8-\u00ff -]/g, " ").slice(0, 80).trim();
+  }
+  function saneiaMt(v) {
+    v = String(v == null ? "" : v).toLowerCase();
+    return v === "e" || v === "p" || v === "b" ? v : "";
+  }
+  function saneiaDev(v) {
+    v = String(v == null ? "" : v).toLowerCase();
+    return v === "m" || v === "c" || v === "t" ? v : "";
+  }
+  function saneiaLoc(v) {
+    return String(v == null ? "" : v).replace(/\D/g, "").slice(0, 12);
+  }
+  function ehAnuncio(src) { return String(src || "").indexOf("anuncio-") === 0; }
+
+  function anuncioDe(o) {
+    o = o || {};
+    var vazio = { kw: "", mt: "", dev: "", loc: "" };
+    if (!ehAnuncio(o.src)) return vazio;
+    var da = {
+      kw: saneiaKw(param(o.search, "kw")), mt: saneiaMt(param(o.search, "mt")),
+      dev: saneiaDev(param(o.search, "dev")), loc: saneiaLoc(param(o.search, "loc"))
+    };
+    if (da.kw || da.mt || da.dev || da.loc) return da;
+    var g = null;
+    try { g = o.guardado ? JSON.parse(o.guardado) : null; } catch (e) { g = null; }
+    if (g && typeof g === "object" && g.src === o.src) {
+      return { kw: saneiaKw(g.kw), mt: saneiaMt(g.mt), dev: saneiaDev(g.dev), loc: saneiaLoc(g.loc) };
+    }
+    return vazio;
+  }
+  function camposAnuncio(tipo, src, anuncio) {
+    var out = {};
+    if (tipo !== "vt_visita" && tipo !== "vt_whatsapp") return out;
+    if (!ehAnuncio(src) || !anuncio) return out;
+    ["kw", "mt", "dev", "loc"].forEach(function (c) { if (anuncio[c]) out[c] = anuncio[c]; });
+    return out;
+  }
+
   var puras = {
+    saneiaKw: saneiaKw, saneiaMt: saneiaMt, saneiaDev: saneiaDev, saneiaLoc: saneiaLoc,
+    anuncioDe: anuncioDe, camposAnuncio: camposAnuncio,
     pctRolagem: pctRolagem, marcosAlcancados: marcosAlcancados, blocoVisto: blocoVisto,
     origemDe: origemDe, marcaOrigem: marcaOrigem, linkWhatsApp: linkWhatsApp,
     estadoLoja: estadoLoja, mensagemAviso: mensagemAviso, raizDe: raizDe,
@@ -213,6 +257,12 @@
   guarda("vt_src", SRC, "sessionStorage");
   VT.src = function () { return SRC; };
 
+  var ANUNCIO = anuncioDe({ search: location.search, src: SRC, guardado: guardado("vt_anuncio", "sessionStorage") });
+  if (ehAnuncio(SRC)) {
+    guarda("vt_anuncio", JSON.stringify({ src: SRC, kw: ANUNCIO.kw, mt: ANUNCIO.mt, dev: ANUNCIO.dev, loc: ANUNCIO.loc }), "sessionStorage");
+  }
+  VT.anuncio = function () { return ANUNCIO; };
+
   function vid() {
     var v = guardado("vt_vid", "localStorage");
     if (v) return v;
@@ -231,6 +281,8 @@
         tipo: tipo, posicao: pagina + "|" + SRC, site: "virtut",
         pagina: pagina, src: SRC, vid: vid(), teste: CFG.homologacao === true
       };
+      var anu = camposAnuncio(tipo, SRC, ANUNCIO);
+      for (var ca in anu) p[ca] = anu[ca];
       if (extra && typeof extra === "object") for (var e in extra) if (!(e in p)) p[e] = extra[e];
       var corpo = JSON.stringify(p);
       var ok = false;

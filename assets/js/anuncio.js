@@ -9,7 +9,7 @@
     if (o.homologacao) return false;
     if (o.depuracao) return true;   // teste de instalação do próprio Google (endereço com gtm_debug)
     if (o.dono === "1" || o.dono === 1 || o.dono === true) return false;
-    return String(o.src || "").indexOf("anuncio-") === 0;
+    return true;
   }
 
   function ehLinkWhatsApp(href) {
