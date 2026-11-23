@@ -19,7 +19,7 @@
 <link rel="preload" href="assets/fontes/worksans-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fontes/tenorsans-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/fontes.css?v=4c5b93b5">
-<link rel="stylesheet" href="assets/css/site.css?v=9aae1b59">
+<link rel="stylesheet" href="assets/css/site.css?v=10eca340">
 <link rel="stylesheet" href="assets/css/direcoes.css?v=20c6150a">
 <script>document.documentElement.classList.add("js-fade")</script>
 <script type="application/ld+json">
@@ -163,6 +163,25 @@
   </nav>
 </header>
 <main id="conteudo">
+<div class="bf-faixa" data-bf data-bf-fim="2026-11-30T23:59:59-03:00">
+  <p class="bf-selo"><span>BLACK FRIDAY DUPLA · VIRTUT</span></p>
+  <div class="bf-faixa-linha">
+    <p>Vale-presente com bônus até 30/11 <span aria-hidden="true">·</span> até 80% na loja, 27 e 28/11</p>
+    <a class="bf-faixa-link" href="vale-presente/">Ver o vale-presente <i aria-hidden="true">→</i></a>
+  </div>
+</div>
+<script>
+(function () {
+  var fim = new Date("2026-11-30T23:59:59-03:00").getTime();
+  function confere() {
+    if (Date.now() > fim) {
+      Array.prototype.forEach.call(document.querySelectorAll("[data-bf]"), function (el) { el.hidden = true; });
+    }
+  }
+  confere();
+  setInterval(confere, 60000);
+})();
+</script>
 <section class="vitrine dir-hero dir-hero-b2">
   <div class="b2-fundo" aria-hidden="true"><img src="assets/img/look-ia-mulher-conjunto-linho-cru-1024.webp" alt="" width="1024" height="1536"></div>
   <figure class="b2-foto" data-fade><img src="assets/img/look-ia-mulher-conjunto-linho-cru-1024.webp" alt="Look montado com peças da Virtut: mulher de blusa sem manga e saia longa de linho cru, com bolsa caramelo, numa varanda" width="1024" height="1536" fetchpriority="high"><figcaption class="dir-legenda">Look montado com peças da Virtut</figcaption></figure>
