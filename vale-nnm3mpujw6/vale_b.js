@@ -31,7 +31,7 @@
   function regrasTxt(d) {
     var valor = d.valor_txt ? ', ' + d.valor_txt : '';
     return 'Vale ' + d.codigo + valor + ', ' + d.validade_frase.toLowerCase() + '. Roupas, acessórios e consultoria de imagem. ' +
-      'Passou do valor, paga a diferença; sobrou, vira crédito na loja. Não é trocado por dinheiro.';
+      'Passou do valor, paga a diferença; sobrou, vira crédito na loja. Não é trocado por dinheiro. Não vale para peças em promoção.';
   }
 
   /* ---------- recursos ---------- */
