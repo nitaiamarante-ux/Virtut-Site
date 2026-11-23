@@ -1237,3 +1237,195 @@ body[data-pagina="consultoria"] .e2-fotos figcaption{margin-top:var(--s-3);font-
 @media (max-width:899px){body[data-pagina="consultoria"] .e2-fotos ul{grid-template-columns:1fr;gap:var(--s-5)}
 body[data-pagina="consultoria"] .e2-fotos img{width:100%}}
 body[data-pagina="consultoria"] :where(main) .e2-tit{margin:var(--s-2) 0 var(--s-5);font-family:var(--f-titulo);font-weight:400;font-size:clamp(1.375rem,1.1rem + 1vw,1.75rem);line-height:1.25;color:var(--texto)}
+
+
+body[data-pagina="vale-presente"]{--cream:#FBF8F4;--f-vinho-texto:rgba(255,255,255,.9)}
+body[data-pagina="vale-presente"] [hidden]{display:none!important}
+body[data-pagina="vale-presente"] main p{font-size:1.125rem;line-height:1.6;max-width:62ch}
+body[data-pagina="vale-presente"] main h2{font-size:clamp(1.875rem,3vw,2.5rem);margin:0 0 var(--s-5)}
+body[data-pagina="vale-presente"] main h3{font-size:1.375rem;line-height:1.25;margin:0 0 var(--s-2)}
+body[data-pagina="vale-presente"] .h1-nome{display:block;font-size:clamp(3rem,6.4vw,5.25rem);line-height:1.02;letter-spacing:.005em}
+body[data-pagina="vale-presente"] .h1-resto{display:block;font-family:var(--f-corpo);font-size:clamp(1.125rem,1.7vw,1.375rem);line-height:1.4;letter-spacing:0;margin-top:var(--s-3);max-width:34em}
+body[data-pagina="vale-presente"] .faixa{padding:64px 0}
+body[data-pagina="vale-presente"] .f-branco{background:#fff}
+body[data-pagina="vale-presente"] .f-linho{background:var(--areia)}
+body[data-pagina="vale-presente"] .f-vinho{background:var(--vinho);color:#fff}
+body[data-pagina="vale-presente"] .f-vinho h2,body[data-pagina="vale-presente"] .f-vinho h3,body[data-pagina="vale-presente"] .f-vinho p{color:#fff}
+body[data-pagina="vale-presente"] .acao-1.a-inv{background:#fff;color:var(--texto);box-shadow:0 8px 22px rgba(30,23,23,.28)}
+body[data-pagina="vale-presente"] .acao-1.a-inv:hover{background:var(--bege-claro);color:var(--texto)}
+body[data-pagina="vale-presente"] .acao-1.a-inv .acao-ic{background:var(--vinho);color:#fff}
+body[data-pagina="vale-presente"] .acao-1.a-inv .acao-txt>span{color:var(--texto-2)}
+body[data-pagina="vale-presente"] .acao-1.a-inv .acao-txt strong{color:var(--texto)}
+body[data-pagina="vale-presente"] .acao-1.a-inv .acao-seta{color:var(--vinho);border-color:var(--vinho)}
+body[data-pagina="vale-presente"] .vcard{position:relative;margin:0;max-width:440px;width:100%}
+body[data-pagina="vale-presente"] .vc-obj{position:relative}
+body[data-pagina="vale-presente"] .vc-papel{position:absolute;inset:14px -10px -10px 10px;background:var(--vinho-escuro);border-radius:10px;transform:rotate(1.6deg)}
+body[data-pagina="vale-presente"] .vc-folha{position:relative;background:var(--cream);border-radius:6px;padding:28px 28px 24px;text-align:center;box-shadow:0 14px 34px rgba(30,23,23,.28);outline:1px solid var(--bege);outline-offset:-10px}
+body[data-pagina="vale-presente"] .vc-logo{display:block;width:112px;height:auto;margin:4px auto 10px}
+body[data-pagina="vale-presente"] main .vc-nome{font-family:var(--f-titulo);font-size:3rem;line-height:1.05;white-space:nowrap;color:var(--vinho);margin:0 auto;max-width:none}
+body[data-pagina="vale-presente"] main .vc-para{font-family:var(--f-titulo);font-size:1.5rem;line-height:1.3;color:var(--texto);margin:6px auto 0;max-width:none;overflow-wrap:anywhere}
+body[data-pagina="vale-presente"] main .vc-frase{font-style:italic;font-weight:300;font-size:1rem;line-height:1.4;color:var(--texto-2);margin:10px auto 0;max-width:30ch;overflow-wrap:anywhere}
+body[data-pagina="vale-presente"] main .vc-de{font-size:1rem;color:var(--texto);margin:6px auto 0;max-width:none;overflow-wrap:anywhere}
+body[data-pagina="vale-presente"] .vc-pe{display:flex;align-items:center;justify-content:center;gap:var(--s-5);margin-top:var(--s-4)}
+body[data-pagina="vale-presente"] .vc-selo{flex:none;width:112px;height:112px;border-radius:50%;background:var(--vinho);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 0 0 3px var(--cream),0 0 0 4px var(--bege)}
+body[data-pagina="vale-presente"] .vc-selo>span{font-size:.8125rem;letter-spacing:.12em;text-transform:uppercase;color:var(--bege-claro)}
+body[data-pagina="vale-presente"] .vc-selo b{font-family:var(--f-titulo);font-weight:400;font-size:2.125rem;line-height:1.1}
+body[data-pagina="vale-presente"] main .vc-uso{font-size:.9375rem;line-height:1.35;color:var(--texto-2);text-align:left;margin:0;max-width:20ch}
+body[data-pagina="vale-presente"] .vc-uso strong{display:block;font-weight:600;color:var(--texto)}
+body[data-pagina="vale-presente"] .vcard figcaption{font-size:.9375rem;line-height:1.4;margin-top:var(--s-5);color:var(--texto-2)}
+body[data-pagina="vale-presente"] .cap50{display:grid;grid-template-columns:minmax(0,1fr)}
+body[data-pagina="vale-presente"] .cap-f{margin:0}
+body[data-pagina="vale-presente"] .cap-f img{display:block;width:100%;height:100%;min-height:320px;max-height:640px;object-fit:cover}
+body[data-pagina="vale-presente"] .cap-t{padding:48px var(--s-4)}
+body[data-pagina="vale-presente"] .cap-in{max-width:34rem}
+@media (min-width:900px){body[data-pagina="vale-presente"] .cap50{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}
+body[data-pagina="vale-presente"] .cap-t{display:flex;align-items:center;padding:64px var(--s-8)}
+body[data-pagina="vale-presente"] .foto-dir .cap-t{justify-content:flex-end}
+body[data-pagina="vale-presente"] .cap-f img{min-height:560px;height:100%}}
+body[data-pagina="vale-presente"] .vcit{margin:var(--s-5) 0}
+body[data-pagina="vale-presente"] main .vcit p{font-family:var(--f-titulo);font-size:clamp(1.25rem,2vw,1.625rem);line-height:1.35;color:var(--vinho-escuro)}
+body[data-pagina="vale-presente"] .fz-grade{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--s-7)}
+@media (min-width:900px){body[data-pagina="vale-presente"] .fz-grade{grid-template-columns:minmax(0,1.15fr) minmax(0,440px);gap:var(--s-9);align-items:start}
+body[data-pagina="vale-presente"] .fz-cartao{position:sticky;top:112px}}
+body[data-pagina="vale-presente"] .fz-lead{margin:0 0 var(--s-6)}
+body[data-pagina="vale-presente"] .co-grade{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--s-6)}
+@media (min-width:900px){body[data-pagina="vale-presente"] .co-grade{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--s-8);align-items:center}}
+body[data-pagina="vale-presente"] .vpassos{list-style:none;margin:0;padding:var(--s-6);background:#fff;border-radius:12px;display:grid;gap:var(--s-5)}
+body[data-pagina="vale-presente"] .vpassos li{display:flex;gap:var(--s-4);align-items:flex-start}
+body[data-pagina="vale-presente"] .pn{flex:none;width:40px;height:40px;border-radius:50%;background:var(--vinho);color:#fff;display:grid;place-items:center;font-family:var(--f-titulo);font-size:1.25rem}
+body[data-pagina="vale-presente"] main .vpassos h3,body[data-pagina="vale-presente"] main .vpassos p{color:var(--texto);margin:0}
+body[data-pagina="vale-presente"] main .vpassos h3{margin-bottom:4px}
+body[data-pagina="vale-presente"] .regras{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:var(--s-6)}
+@media (min-width:700px){body[data-pagina="vale-presente"] .regras{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1100px){body[data-pagina="vale-presente"] .regras{grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--s-7)}}
+body[data-pagina="vale-presente"] .regras strong{display:block;font-family:var(--f-titulo);font-weight:400;font-size:1.5rem;line-height:1.2;color:var(--vinho-escuro);margin-bottom:var(--s-2)}
+body[data-pagina="vale-presente"] .regras span{font-size:1.0625rem;line-height:1.5}
+body[data-pagina="vale-presente"] .vps{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--s-6) var(--s-8)}
+@media (min-width:900px){body[data-pagina="vale-presente"] .vps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+body[data-pagina="vale-presente"] main .vp p{margin:0}
+body[data-pagina="vale-presente"] .replicas{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--s-5);align-items:start}
+@media (min-width:900px){body[data-pagina="vale-presente"] .replicas{grid-template-columns:repeat(3,minmax(0,1fr))}}
+body[data-pagina="vale-presente"] .replicas .cartao-google,body[data-pagina="vale-presente"] .replicas .cartao-ig,body[data-pagina="vale-presente"] .mom .cartao-google,body[data-pagina="vale-presente"] .mom .cartao-ig{margin:var(--s-4) 0 0;max-width:none;padding:22px}
+body[data-pagina="vale-presente"] .replicas .cartao-google,body[data-pagina="vale-presente"] .replicas .cartao-ig{margin:0}
+body[data-pagina="vale-presente"] main .cartao-google p.aval-texto,body[data-pagina="vale-presente"] main .cartao-ig p.ig-texto{font-size:1rem;line-height:1.5}
+body[data-pagina="vale-presente"] main .cartao-ig p.ig-acoes{font-size:.875rem;line-height:1.4;max-width:none}
+body[data-pagina="vale-presente"] main .pv-sub{margin:0 0 var(--s-5);color:var(--texto-2)}
+body[data-pagina="vale-presente"] .acoes-col{margin-top:var(--s-5)}
+body[data-pagina="vale-presente"] .aberta{margin:var(--s-3) 0 0}
+body[data-pagina="vale-presente"] .rotulo{font-size:1rem;font-weight:600;letter-spacing:.08em;color:var(--vinho-escuro);margin:0 0 var(--s-3)}
+@media (max-width:899px){body[data-pagina="vale-presente"] .faixa{padding:48px 0}
+body[data-pagina="vale-presente"] .vc-folha{padding:22px 18px}
+body[data-pagina="vale-presente"] .vc-selo{width:100px;height:100px}
+body[data-pagina="vale-presente"] main .vc-nome{font-size:2.5rem}}
+@media (min-width:900px) and (max-height:660px){body[data-pagina="vale-presente"] .h1-resto{font-size:1.0625rem;margin-top:var(--s-2)}
+body[data-pagina="vale-presente"] .a-acoes{margin-top:var(--s-3)}}
+body[data-pagina="vale-presente"] .a-acoes{display:flex;align-items:center;flex-wrap:wrap;gap:var(--s-5)}
+body[data-pagina="vale-presente"] .a-acoes .acao-1{flex:1 1 320px;max-width:var(--acao-w)}
+body[data-pagina="vale-presente"] .hero-wa{color:#fff;padding:0}
+body[data-pagina="vale-presente"] .hero-wa .acao-ic,body[data-pagina="vale-presente"] .hero-wa .acao-3-t{color:#fff}
+body[data-pagina="vale-presente"] .hero-wa .acao-3-t{text-decoration-color:#fff}
+body[data-pagina="vale-presente"] .hero-wa:hover{color:#fff}
+@media (max-width:899px){body[data-pagina="vale-presente"] .hero-wa{display:none}}
+body[data-pagina="vale-presente"] .b-open{position:relative;isolation:isolate;overflow:hidden;background:#1e1717;color:#fff}
+body[data-pagina="vale-presente"] .b-open::before{content:"";position:absolute;inset:-60px;z-index:-2;background:var(--poster) 70% 30%/cover no-repeat;filter:blur(34px) brightness(.5)}
+body[data-pagina="vale-presente"] .b-open::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(#1e1717 0,rgba(30,23,23,0) 56px),linear-gradient(to right,rgba(24,18,18,.72) 0%,rgba(24,18,18,.4) 55%,rgba(24,18,18,.1) 100%)}
+body[data-pagina="vale-presente"] .b-grade{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--s-6);padding-top:var(--s-6);padding-bottom:var(--s-7)}
+@media (min-width:900px){body[data-pagina="vale-presente"] .b-grade{grid-template-columns:minmax(0,1fr) minmax(0,480px);gap:var(--s-8);align-items:center;padding-bottom:var(--s-6)}}
+body[data-pagina="vale-presente"] .b-open h1,body[data-pagina="vale-presente"] .b-open p.lead{color:#fff}
+body[data-pagina="vale-presente"] .b-open h1{margin:0 0 var(--s-4)}
+body[data-pagina="vale-presente"] .b-open p.lead{font-size:1.25rem;line-height:1.45;margin:0;max-width:32em}
+body[data-pagina="vale-presente"] .a-acoes{margin-top:var(--s-5)}
+body[data-pagina="vale-presente"] .b-foto{position:relative;margin:0}
+body[data-pagina="vale-presente"] .b-foto>img{display:block;width:100%;height:auto;max-height:440px;object-fit:cover;object-position:50% 15%;border-radius:8px}
+body[data-pagina="vale-presente"] .b-mini{position:absolute;left:-56px;bottom:12px;width:200px}
+body[data-pagina="vale-presente"] .vcard-mini figcaption,body[data-pagina="vale-presente"] .vcard-mini .vc-frase,body[data-pagina="vale-presente"] .vcard-mini .vc-de,body[data-pagina="vale-presente"] .vcard-mini .vc-logo,body[data-pagina="vale-presente"] .vcard-mini .vc-uso{display:none}
+body[data-pagina="vale-presente"] .vcard-mini .vc-folha{padding:14px 12px 16px;outline-offset:-6px}
+body[data-pagina="vale-presente"] main .vcard-mini .vc-nome{font-size:1.625rem}
+body[data-pagina="vale-presente"] main .vcard-mini .vc-para{font-size:1rem;margin-top:2px}
+body[data-pagina="vale-presente"] .vcard-mini .vc-pe{margin-top:8px}
+body[data-pagina="vale-presente"] .vcard-mini .vc-selo{width:72px;height:72px}
+body[data-pagina="vale-presente"] .vcard-mini .vc-selo b{font-size:1.25rem}
+body[data-pagina="vale-presente"] .vcard-mini .vc-selo>span{font-size:.8125rem;letter-spacing:.04em}
+body[data-pagina="vale-presente"] .vcard-mini .vc-papel{inset:8px -6px -6px 6px}
+body[data-pagina="vale-presente"] .b-intro{padding:64px 0;background:#fff}
+body[data-pagina="vale-presente"] .bi-in{max-width:880px}
+body[data-pagina="vale-presente"] .momentos{display:grid;grid-template-columns:minmax(0,1fr);gap:var(--s-7);margin-bottom:var(--s-5)}
+@media (min-width:900px){body[data-pagina="vale-presente"] .momentos{grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s-6)}}
+body[data-pagina="vale-presente"] .mom{display:flex;flex-direction:column;align-items:stretch}
+@media (min-width:900px){body[data-pagina="vale-presente"] main .mom h3{min-height:3.4rem}
+body[data-pagina="vale-presente"] main .mom>p{min-height:5.1rem}}
+body[data-pagina="vale-presente"] main .mom>p{margin:0}
+body[data-pagina="vale-presente"] .f-vinho .fz-cartao figcaption{color:#fff}
+body[data-pagina="vale-presente"] .f-vinho .fz-cartao .vc-papel{background:#5e2c35}
+@media (max-width:899px){body[data-pagina="vale-presente"] .b-foto>img{max-height:420px}
+body[data-pagina="vale-presente"] .b-mini{left:8px;top:16px;bottom:auto;width:176px}
+body[data-pagina="vale-presente"] .vcard-mini .vc-selo{width:64px;height:64px}
+body[data-pagina="vale-presente"] main .vcard-mini .vc-nome{font-size:1.375rem}}
+
+body[data-pagina="vale-presente"] .cap-f img{max-width:1200px}
+body[data-pagina="vale-presente"] .cap-f{background:#1e1717}
+body[data-pagina="vale-presente"] .regras{align-items:start}
+@media (min-width:1100px){body[data-pagina="vale-presente"] .regras{grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--s-7) var(--s-8)}body[data-pagina="vale-presente"] .regras.regras-bonus{grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--s-7)}}
+body[data-pagina="vale-presente"] .regra-bonus{margin-top:var(--s-8);padding-top:var(--s-7);border-top:1px solid var(--bege)}
+body[data-pagina="vale-presente"] .vp-mais{margin-top:var(--s-6)}
+body[data-pagina="vale-presente"] .acao-3-linha{margin-top:var(--s-5)}
+body[data-pagina="vale-presente"] main .resumo{max-width:34em}
+
+body[data-pagina="vale-presente"] .acao-1.a-inv{background:#fff;color:var(--texto);box-shadow:0 8px 22px rgba(30,23,23,.28)}
+body[data-pagina="vale-presente"] .acao-1.a-inv:hover{background:var(--bege-claro);color:var(--texto)}
+body[data-pagina="vale-presente"] .acao-1.a-inv .acao-ic{background:var(--vinho);color:#fff}
+body[data-pagina="vale-presente"] .acao-1.a-inv .acao-txt>span{color:var(--texto-2)}
+body[data-pagina="vale-presente"] .acao-1.a-inv .acao-txt strong{color:var(--texto)}
+body[data-pagina="vale-presente"] .acao-1.a-inv .acao-seta{color:var(--vinho);border-color:var(--vinho)}
+body[data-pagina="vale-presente"] .a-acoes{display:flex;align-items:center;flex-wrap:wrap;gap:var(--s-5);margin-top:var(--s-5)}
+body[data-pagina="vale-presente"] .a-acoes .acao-1{flex:1 1 320px;max-width:var(--acao-w)}
+
+body[data-pagina="vale-presente"] .bf-chip{display:inline-flex;flex-direction:column;gap:2px;margin:0 0 var(--s-4);padding:10px 16px;border-left:3px solid #fff;background:rgba(255,255,255,.12);border-radius:0 8px 8px 0}
+body[data-pagina="vale-presente"] main .bf-chip{font-size:1rem;line-height:1.35;max-width:none;color:#fff}
+body[data-pagina="vale-presente"] .bf-chip strong{font-family:var(--f-titulo);font-weight:400;font-size:1.375rem;letter-spacing:.02em}
+body[data-pagina="vale-presente"] .bf-chip span{color:rgba(255,255,255,.92)}
+
+body[data-pagina="vale-presente"] main .rotulo-claro{font-size:1rem;font-weight:600;letter-spacing:.08em;color:var(--bege-claro);margin:0 0 var(--s-3);max-width:none}
+body[data-pagina="vale-presente"] .vv-grade{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--s-4)}
+body[data-pagina="vale-presente"] .vv-grade.vv-tres{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (min-width:640px){body[data-pagina="vale-presente"] .vv-grade{gap:var(--s-5)}}
+body[data-pagina="vale-presente"] .vv{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:20px 20px 16px;background:#fff;color:var(--texto);border:2px solid #fff;border-radius:12px;text-decoration:none;box-shadow:0 6px 18px rgba(30,23,23,.22);transition:transform .15s,box-shadow .15s}
+body[data-pagina="vale-presente"] .vv:hover{color:var(--texto);transform:translateY(-3px);box-shadow:0 12px 26px rgba(30,23,23,.32)}
+body[data-pagina="vale-presente"] .vv:focus-visible{outline:3px solid #fff;outline-offset:3px}
+body[data-pagina="vale-presente"] .vv-marca{background:var(--bege-claro);border-color:var(--texto)}
+body[data-pagina="vale-presente"] .vv-rot{font-size:.9375rem;line-height:1.3;color:var(--texto-2)}
+body[data-pagina="vale-presente"] .vv-v{font-family:var(--f-titulo);font-weight:400;font-size:1.75rem;line-height:1.15;color:var(--texto);margin-bottom:var(--s-2)}
+body[data-pagina="vale-presente"] .vv-g{font-family:var(--f-titulo);font-weight:400;font-size:2.25rem;line-height:1.1;color:var(--vinho)}
+body[data-pagina="vale-presente"] .vv-b{display:inline-block;margin-top:var(--s-3);padding:4px 12px;border-radius:999px;background:var(--vinho);color:#fff;font-size:.9375rem;font-weight:600;line-height:1.4}
+body[data-pagina="vale-presente"] .vv-ir{margin-top:var(--s-4);padding-top:var(--s-3);border-top:1px solid var(--bege);width:100%;font-size:1rem;font-weight:600;color:var(--vinho-escuro);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}
+body[data-pagina="vale-presente"] .vv:hover .vv-ir{text-decoration-thickness:2px}
+body[data-pagina="vale-presente"] .vv-ir i{font-style:normal;text-decoration:none;display:inline-block}
+body[data-pagina="vale-presente"] .vv-outro{grid-column:1/-1;flex-direction:row;align-items:center;justify-content:space-between;gap:var(--s-5);padding:16px 20px}
+body[data-pagina="vale-presente"] .vv-outro .vv-oc{display:flex;flex-direction:column}
+body[data-pagina="vale-presente"] .vv-outro .vv-v{font-size:1.5rem;margin:0}
+body[data-pagina="vale-presente"] .vv-outro .vv-ir{margin:0;padding:0;border:0;width:auto;flex:none}
+body[data-pagina="vale-presente"] .vv-tres .vv:not(.vv-outro){min-height:150px}
+body[data-pagina="vale-presente"] .vv-tres .vv:not(.vv-outro) .vv-rot{margin-bottom:auto}
+body[data-pagina="vale-presente"] .vv-tres .vv-ir{margin-top:var(--s-4)}
+body[data-pagina="vale-presente"] .vv-tres .vv:last-of-type{grid-column:1/-1}
+@media (min-width:1100px){body[data-pagina="vale-presente"] .vv-grade.vv-tres{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:420px){body[data-pagina="vale-presente"] .vv{padding:16px 14px 14px}body[data-pagina="vale-presente"] .vv-v{font-size:1.5rem}body[data-pagina="vale-presente"] .vv-g{font-size:1.875rem}body[data-pagina="vale-presente"] .vv-outro{flex-direction:column;align-items:flex-start;gap:var(--s-3)}}
+
+body[data-pagina="vale-presente"] .bf-faixas{width:100%;margin-top:var(--s-6);border-collapse:collapse;color:#fff;font-size:1.0625rem;line-height:1.4}
+body[data-pagina="vale-presente"] .bf-faixas caption{text-align:left;font-family:var(--f-titulo);font-size:1.375rem;padding:0 0 var(--s-3);color:#fff}
+body[data-pagina="vale-presente"] .bf-faixas th,body[data-pagina="vale-presente"] .bf-faixas td{text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid rgba(255,255,255,.28);font-weight:400;vertical-align:top}
+body[data-pagina="vale-presente"] .bf-faixas thead th{font-size:.9375rem;font-weight:600;letter-spacing:.06em;color:var(--bege-claro)}
+body[data-pagina="vale-presente"] .bf-faixas tbody th{font-weight:600}
+body[data-pagina="vale-presente"] .bf-faixas td:nth-child(2){font-weight:600;white-space:nowrap}
+@media (max-width:640px){body[data-pagina="vale-presente"] .bf-faixas{font-size:1rem}body[data-pagina="vale-presente"] .bf-faixas thead th:nth-child(3),body[data-pagina="vale-presente"] .bf-faixas td:nth-child(3){display:none}}
+body[data-pagina="vale-presente"] main .f-vinho .vf-nota{font-size:1rem;color:rgba(255,255,255,.9);margin:var(--s-4) 0 0}
+body[data-pagina="vale-presente"] main .f-vinho .vf-pix{margin-top:var(--s-6)}
+body[data-pagina="vale-presente"] .f-vinho .fz-form{min-width:0}
+@media (min-width:900px) and (max-height:660px){body[data-pagina="vale-presente"] .h1-nome{font-size:3.25rem}body[data-pagina="vale-presente"] .b-open h1{margin-bottom:var(--s-3)}body[data-pagina="vale-presente"] .b-open p.lead{font-size:1.0625rem}body[data-pagina="vale-presente"] .a-acoes{margin-top:var(--s-3)}body[data-pagina="vale-presente"] .bf-chip{margin-bottom:var(--s-3);padding:6px 14px}body[data-pagina="vale-presente"] .bf-chip strong{font-size:1.1875rem}}
+body[data-pagina="vale-presente"] main .acao-3{padding-left:0;margin-left:-12px}
+@media (max-width:899px){body[data-pagina="vale-presente"] .vcard-mini .vc-selo{width:80px;height:80px}body[data-pagina="vale-presente"] .vcard-mini .vc-selo>span{font-size:.6875rem;letter-spacing:.02em}body[data-pagina="vale-presente"] .vcard-mini .vc-selo b{font-size:1.375rem}body[data-pagina="vale-presente"] .b-mini{width:184px}}
+@media (max-width:420px){body[data-pagina="vale-presente"] .vv-rot{font-size:.875rem}body[data-pagina="vale-presente"] .vv-ir{font-size:.875rem;white-space:nowrap}body[data-pagina="vale-presente"] .vv-outro .vv-ir{font-size:.9375rem}}
+@media (min-width:900px) and (max-height:660px){body[data-pagina="vale-presente"] .bf-chip{flex-direction:row;flex-wrap:wrap;align-items:baseline;column-gap:14px}body[data-pagina="vale-presente"] .b-grade{padding-top:var(--s-4);padding-bottom:var(--s-5)}body[data-pagina="vale-presente"] main .b-open p.lead{line-height:1.4}}
+body[data-pagina="vale-presente"] main .regra-bonus h3{font-family:var(--f-titulo);font-weight:400;font-size:1.75rem;line-height:1.2;margin:0 0 var(--s-5)}
+body[data-pagina="vale-presente"] .b-foto>img{object-position:50% 26%}
+@media (max-width:899px){body[data-pagina="vale-presente"] .b-mini{top:auto;bottom:12px;left:8px}}
